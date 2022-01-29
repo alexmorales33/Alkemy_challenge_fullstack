@@ -35,7 +35,7 @@ $('document').ready(function () {
 
 
 function renderTransacciones()
-{
+{  
    $('.expenses-item').each(function () {
       $(this).remove();
    });
@@ -75,9 +75,11 @@ function renderTransacciones()
 
                
             expenseList.appendChild(ul);
+            $('#expenseList li:gt(2)').remove();
 
          } else { console.log("Error") }
       });
+
       $('#budget').html('$'+toDec(totalBudget));
       $('#expense').html('$'+toDec(totalExpense));
       $('#balance').html('$'+toDec(totalBalance));
@@ -198,3 +200,5 @@ function format_number(x,n)
     x = parseFloat(x);
     return x.toFixed(n);
 }
+
+

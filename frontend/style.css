@@ -93,6 +93,14 @@ input {
     font-weight: 400;
 }
 
+#add-expense-btn {
+    color: #9A2E39;
+}
+
+#calculate-btn {
+    color: #198754;
+}
+
 .btn:hover {
     box-shadow: 0 0 10px blue;
 }
